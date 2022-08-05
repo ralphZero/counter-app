@@ -1,6 +1,6 @@
 .game-body {
     width: 350px;
-    height: 700px;
+    height: calc(100% - 4rem);
     background-color: #512F8B;
     border-radius: 23px;
     display: flex;
