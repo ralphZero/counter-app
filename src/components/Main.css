@@ -1,0 +1,9 @@
+.game-body {
+    width: 350px;
+    height: 700px;
+    background-color: #512F8B;
+    border-radius: 23px;
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+}
