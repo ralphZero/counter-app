@@ -18,7 +18,7 @@ footer {
   height: 4rem;
   background: url(./images/terrain.png);
   background-position: bottom;
-  background-size: 50%;
+  background-size: 600px;
 }
 
 main {
