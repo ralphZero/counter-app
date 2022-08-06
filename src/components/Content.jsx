@@ -29,14 +29,23 @@ const Content = () => {
                 { count }
             </div>
        </div>
-        
-        <div className='buttons'>
-            <button onClick={removeTen}>-10</button>
-            <button onClick={minus}>-</button>
-            <button onClick={reset}>reset</button>
-            <button onClick={add}>+</button>
-            <button onClick={addTen}>+10</button>
+        <div className="button-group">
+            <div className="button-reset-group">
+                <button className='reset-button' onClick={reset}>reset</button>
+                <div className='reset-button-text'>reset</div>
+            </div>
+            <div className='buttons'>
+                <div style={{marginInlineEnd: 20}} className="button-row">
+                    <button id="button-blue" className="counter-button" onClick={removeTen}>-10</button>
+                    <button id="button-yellow" className="counter-button" onClick={addTen}>+10</button>
+                </div>
+                <div style={{position: 'relative', bottom: '50px'}} className="button-row">
+                    <button id="button-green" className="counter-button" onClick={minus}>-</button>
+                    <button id="button-red" className="counter-button" onClick={add}>+</button>
+                </div>
+            </div>
         </div>
+        
        </>
     );
 }

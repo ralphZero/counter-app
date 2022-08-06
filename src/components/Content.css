@@ -9,6 +9,7 @@
 }
 .screen {
     background-color: #BDC2AD;
+    color: #5F615B;
     height: 150px;
     width: 220px;
     display: flex;
@@ -21,16 +22,66 @@
     font-size: 3rem;
 }
 
-.buttons {
-    display: flex;
-    justify-content: center;
-    padding-top: 3rem;
+.button-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.3em;
 }
-.buttons > button {
+
+.button-reset-group {
+    background: url(../images/dots_bg.png) no-repeat;
+    background-position: bottom left;
+    background-size: contain;
+}
+
+.reset-button {
+    background-color: #3A3C42;
+    color: #3A3C42;
+    box-shadow: 0px -2px 0px rgba(0, 0, 0, 0.25);
+    border: 0;
+    border-radius: 25px;
+    padding: 2px 10px;
+}
+.reset-button-text {
+    font-family: 'Orbitron', sans-serif;
+    color: #704CAC;
+}
+
+.counter-button {
     width: 5rem;
     margin: 10px;
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
     border: 0;
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25), inset 1px -8px 10px rgba(247, 247, 247, 0.09);
+    color: #ffffff77;
+    font-weight: 800;
+    font-size: 1.2em;
+}
+
+.buttons {
+    position: relative;
+}
+
+.button-row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#button-blue {
+    margin-top: 70px;
+    background-color: #0F3095;
+}
+
+#button-green {
+    margin-top: 70px;
+    background-color: #07582C;
+}
+
+#button-yellow {
+    background-color: #67630B;
+}
+#button-red {
+    background-color: #701818;
 }
