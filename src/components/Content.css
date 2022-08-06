@@ -72,6 +72,7 @@
 #button-blue {
     margin-top: 70px;
     background-color: #0F3095;
+    z-index: 10;
 }
 
 #button-green {
